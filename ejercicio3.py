@@ -6,7 +6,6 @@ class Naturaleza:
 class Producto(Naturaleza):
     def __init__(self,iva):
         self.iva = iva
-        self.iva = 100
     def facturar(self):
         return 100 +self.iva
 
