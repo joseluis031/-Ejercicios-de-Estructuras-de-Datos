@@ -11,7 +11,8 @@ class Mayuscula():
     
         
         f = open("archivo.txt","w")
-        f.write(datos.linea1.upper() + "/n"datos.linea2.upper())
+        f.write(datos.linea1.upper() + "\n" + datos.linea2.upper())
+        f.close
     
     
     
