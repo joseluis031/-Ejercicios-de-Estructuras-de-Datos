@@ -16,15 +16,12 @@ class Factory(Producto):
         clase = Producto(self.iva)
         return clase
     
-#Declaramos Naturaleza como instancia de la clase Naturaleza, para poder aplicar el iva correspondiente
 Naturaleza = Naturaleza()
 
 producto = Producto(Naturaleza.ALIMENTARIA)
 precio_con_impuestos = Factory.crear(producto).facturar()
 print(precio_con_impuestos)
-# 105.5
 
 producto = Producto(Naturaleza.SERVICIO)
 precio_con_impuestos = Factory.crear(producto).facturar()
 print(precio_con_impuestos)
-# 120
