@@ -16,12 +16,4 @@ class Factory(Producto):
         clase = Producto(self.iva)
         return clase
     
-Naturaleza = Naturaleza()
 
-producto = Producto(Naturaleza.ALIMENTARIA)
-precio_con_impuestos = Factory.crear(producto).facturar()
-print(precio_con_impuestos)
-
-producto = Producto(Naturaleza.SERVICIO)
-precio_con_impuestos = Factory.crear(producto).facturar()
-print(precio_con_impuestos)

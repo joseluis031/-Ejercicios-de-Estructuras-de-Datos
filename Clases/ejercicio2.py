@@ -17,7 +17,4 @@ class Mayuscula():
     
     
     
-linea1 = input("Introduzca la primera linea del archivo:")
-linea2 = input("Introduce la segunda linea del archivo:")
-datos = Entrada(linea1,linea2)
-datosMy = Mayuscula(datos)
+
